@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=add_shopping_cart" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Product list with cart</title>
+
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+
+</head>
+<body>
+  <main >
+     <div class="overlay"> </div> 
+    <div class="container">
+      <div class="product">
+        <h2>Desserts</h2>
+        <div class="content js-container">
+         <!-- conatiner of pruduct .this product is gerate by js -->
+      </div>
+    </div>
+      <div class="cart-calcul">
+        <div class="cart-content js-cart-content">
+        <h2>Your Cart (7)</h2>
+        <div class="js-name-product-price">
+          <div class="container-product-price">
+            <!-- <div class="name-product-price">
+            <div>
+              <h4>classic Tiramisu</h4>
+              <p><span class="quantity-product">1x</span><span>@$5,50</span><span>5,50</span></p>
+            </div>
+            <img src="./assets/images/icon-remove-item.svg" alt="">
+            </div> -->
+            <hr>
+        </div>
+            <div class="order-total">
+            <div class="price-total">
+            <p>order total</p>
+            <h2 class="js-order-total"></h2>
+            </div>
+          </div>
+          <!-- is the item in the cart genrate by js --> 
+          <div class="confirm-order-button">
+            <div class="natural-delivery">
+              <img src="./assets/images/icon-carbon-neutral.svg" alt="">
+              <p>this is a carbon natural delivery</p>
+            </div>
+            <button id="openpopup">confirm order</button>
+          </div>
+        </div>
+      </div>
+    
+        <div class="empty-cart js-empty-cart">
+          <h1>Your Cart(0)</h1>
+          <div class="div-empty-cart">
+            <img src="./assets/images/illustration-empty-cart.svg" alt="">
+            <p>Your added items will apear here</p>
+          </div>
+        </div> 
+      </div>
+    </div> 
+  </main>
+  <div class="container-order" id="popup">
+    <img class="icon-order-confirmed" src="./assets/images/icon-order-confirmed.svg" alt="">
+    <div>
+        <h1>Order Confirmed</h1>
+        <p>we hope you enjoy your food</p>
+    </div>
+    <div class="parent-order">
+        <div class="content-order">
+          <div class="container-product-popup">
+            <!-- <div class="product-order">
+                <div class="product-selected">
+                    <img src="./assets/images/image-baklava-thumbnail.jpg" alt="">
+                    <div class="order-name-with-price">
+                        <h4>classic tiramisu</h4>
+                        <p><span class="quantity-color">1x</span><span id="popup-price">@$5.50</span></p>
+                    </div>
+                </div>
+                <h3 id="popup-product-total">$5.50</h3>
+            </div>
+            <hr> -->
+          </div>
+            <div class="price-total-product-popup">
+                <p>order total</p>
+                <h2 class="popup-total-price"></h2>
+            </div>
+        </div>
+        <button id="closepopup">confirm order</button>
+        
+    </div>
+</div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
