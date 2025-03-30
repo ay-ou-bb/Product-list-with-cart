@@ -4,7 +4,7 @@ import {increaseQuantityAndPrice,decreaseQuantityPrice,removeFromCart} from '/mo
 async function fetchData() {
 
    try{
-    const response = await fetch('/data.json')
+    const response = await fetch('./data.php')
     if (!response.ok) {
         throw new Error('error')
     }
